@@ -1,0 +1,47 @@
+/* Botón del menú */
+.menu-btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute; /* Posiciona el botón */
+    top: 10px; /* Margen desde la parte superior */
+    left: 10px; /* Margen desde la izquierda */
+}
+
+/* Estilo del contenedor del menú */
+.menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 0; /* Pegado a la parte superior */
+    left: 0; /* Pegado al lado izquierdo */
+    width: 250px; /* Ajusta el ancho de la barra */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    background-color: #4CAF50; /* Fondo verde */
+    padding: 15px;
+    text-align: left; /* Alineación del contenido a la izquierda */
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    overflow-y: auto; /* Desplazamiento si es necesario */
+}
+
+/* Estilo para los enlaces */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Enlace al pasar el mouse */
+.menu a:hover {
+    color: #000; /* Negro */
+}
+
+/* Mostrar el menú cuando está activo */
+.menu.active {
+    display: block;
+}

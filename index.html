@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href=estiloamburgesa.css>
+    <link rel="stylesheet" href="estilofrom.css">
+    <link rel="stylesheet" href="estiloconta.css">
+  
+</head>
+<body>
+    
+     <!-- Contenedor para el título y el logo -->
+<div class="title-container">
+    <h1 class="main-title">Hogar Patitas</h1>
+    <img src="imagenes/logo.png" alt="Logo Hogar Patitas" class="title-logo">
+</div>
+    
+
+    <!-- Menú hamburguesa -->
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+    <div class="menu" id="menu">
+        <nav id="nav-menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#mascotas">Mascotas Disponibles</a></li>
+            <li><a href="#accesorios" id="accesorios-link">Accesorios</a></li>
+            <li><a href="#contacto">Donaciones</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+</script>
+    
+   
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h1>Bienvenido al Refugio de Adopción de Mascotas</h1>
+        <p>Adopta una mascota y cambia una vida. En nuestro refugio encontrarás perros y gatos esperando un hogar lleno de amor.</p>
+    </section>
+
+    
+       <!-- Sección de Mascotas Disponibles -->
+    <section id="mascotas">
+        <h2>Mascotas Disponibles para Adopción</h2>
+        
+        <!-- Sección de Perros -->
+        <h3>Perros Disponibles</h3>
+        <div class="mascotas-container">
+            <div class="mascota-card">
+                <img src="imagenes/ladrador.jpg" alt="Perro 1">
+                <h3>Rocco</h3>
+                <p>Descripción: Rocco es un perro enérgico y juguetón que adora las caminatas al aire libre. ¡Ideal para familias activas!</p>
+                <p>Perro - Labrador</p>
+                <button onclick="openAdoptionForm('Rocco')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/beagle.jpg" alt="Perro 2">
+                <h3>Max</h3>
+                <p>Descripción: Max es un amigo incondicional. Adora los abrazos y está siempre a tu lado cuando lo necesitas.</p>
+                <p>Perro - Beagle</p>
+                <button onclick="openAdoptionForm('Max')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/golden.jpg" alt="Perro 3">
+                <h3>Bella</h3>
+                <p>Descripción:Bella es el compañero perfecto para toda la familia: juguetón, cariñoso y siempre dispuesto a alegrar el día.</p>
+                <p>Perro - Golden Retriever</p>
+                <button onclick="openAdoptionForm('Bella')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/pitbull.jpg"alt="Perro 4">
+                <h3>Rocky</h3>
+                <p>Descripción:Con Rocky Rocco, nunca te faltará diversión. Este pequeño travieso tiene un talento especial para hacerte reír.</p>
+                <p>Perro - Pitbull</p>
+                <button onclick="openAdoptionForm('Rocky')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/chihuahaua.jpg" alt="Perro 5">
+                <h3>Luna</h3>
+                <p>Descripción:Luna es más que un perro; es un rayo de felicidad que llenará tu hogar de amor.</p>
+                <p>Perro - Chihuahua</p>
+                <button onclick="openAdoptionForm('Luna')">Adoptar</button>
+            </div>
+        </div>
+
+        <!-- Sección de Gatos -->
+        <h3>Gatos Disponibles</h3>
+        <div class="mascotas-container">
+            <div class="mascota-card">
+                <img src="imagenes/descarga%20(6).jpg" alt="Gato 1">
+                <h3>Salem</h3>
+                <p>Gato - Negro</p>
+                <p>Descripción:Salem es súper  cariñosa y ni bien ve a los humanos empieza a amasar el piso con sus patitas.</p>
+                <button onclick="openAdoptionForm('Salem')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/atigrado.jpg" alt="Gato 2">
+                <h3>Felix</h3>
+                <p>Gato - Atigrado</p>
+                <p>Descripción:Felix es un gato curioso y juguetón. Disfruta de la compañía y es muy sociable.</p>
+                <button onclick="openAdoptionForm('Felix')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/persa.jpg" alt="Gato 3">
+                <h3>Luna</h3>
+                <p>Gato - Persa</p>
+                <p>Descripción: Luna es cariñosa y le encanta acurrucarse. Es perfecta para quienes buscan una compañera tranquila.</p>
+                <button onclick="openAdoptionForm('Luna')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/siames.jpg" alt="Gato 4">
+                <h3>Milo</h3>
+                <p>Descripcción>: Milo es un explorador nato. Adora investiga cada rincón y disfruta de largas sesiones de juego".</p>
+                <p>Gato - Siamés</p>
+                <button onclick="openAdoptionForm('Milo')">Adoptar</button>
+            </div>
+            <div class="mascota-card">
+                <img src="imagenes/siamon%20coon.jpg" alt="Gato 5">
+                <h3>Whiskers</h3>
+                <p>Gato - Maine Coon</p>
+                <p>Descripción: Whiskers es un gatito encantador, lleno de curiosidad y energía. Siempre está buscando algo nuevo para explorar.</p>
+                <button onclick="openAdoptionForm('Whiskers')">Adoptar</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+     <section id="accesorios">
+        <h2>Accesorios para Mascotas</h2>
+        <div class="accesorios-container">
+            <div class="accesorio-card">
+                <img src="imagenes/correa.png" alt="Collar">
+                <h3>Collar para Perro</h3>
+                <p>Collar resistente y cómodo para perros de todos los tamaños. Ideal para paseos y entrenamiento.</p>
+                <button onclick="openPurchaseForm('Collar para perros')">Comprar</button>
+            </div>
+            <div class="accesorio-card">
+                <img src="imagenes/juguetes.png" alt="Juguete para gato">
+                <h3>Juguete para Gato</h3>
+                <p>Juguete interactivo para mantener a tu gato entretenido, con plumas y movimientos que simulan una presa.</p>
+                <button onclick="openPurchaseForm('Juguete para Gato')">Comprar</button>
+            </div>
+            <div class="accesorio-card">
+                <img src="imagenes/arnespperro.jpg" alt="Arnés">
+                <h3>Arnés para Perro</h3>
+                <p>Arnés ajustable para perros de razas pequeñas y medianas, perfecto para paseos cómodos y seguros.</p>
+                <button onclick="openPurchaseForm('Arnés para Perros')">Comprar</button>
+            </div>
+            <div class="accesorio-card">
+                <img src="imagenes/retractil.jpg" alt="Correa retráctil">
+                <h3>Correa Retráctil</h3>
+                <p>Correa retráctil para perros, perfecta para darles más libertad durante los paseos.</p>
+                <button onclick="openPurchaseForm('Correa Retráctil')">Comprar</button>
+            </div>
+            <div class="accesorio-card">
+                <img src="imagenes/caja%20de%20arena.webp">
+                <h3>Caja de Arena para Gato</h3>
+                <p>Caja de arena para gatos con sistema de autolimpieza, fácil de usar y mantener.</p>
+               <button onclick="openPurchaseForm('Caja de Arena')">Comprar</button>
+            </div>
+       
+
+<!-- Modal de Compra -->
+<div id="purchase-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePurchaseForm()">&times;</span>
+        <h2 id="producto-nombre">Formulario de Compra</h2>
+        <form id="purchase-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="item">Producto:</label>
+            <input type="text" id="item" name="item" readonly>
+
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            
+            <button type="submit">Completar Compra</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    // Mostrar la lista de accesorios y desplazarse a la sección de detalles
+    function showAccesorios() {
+        const accesoriosList = document.getElementById('accesorios-list');
+        accesoriosList.style.display = 'block';
+        
+        // Desplazarse a la sección de detalles de accesorios
+        const detallesAccesorios = document.getElementById('detalles-accesorios');
+        detallesAccesorios.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Funciones del modal de compra
+    function openPurchaseForm(producto) {
+        document.getElementById('producto-nombre').innerText = `Formulario de Compra para ${producto}`;
+        document.getElementById('purchase-modal').style.display = 'flex';
+    }
+
+    function closePurchaseForm() {
+        document.getElementById('purchase-modal').style.display = 'none';
+    }
+
+    // Cerrar el modal si se hace clic fuera de él
+    window.onclick = function(event) {
+        const modal = document.getElementById('purchase-modal');
+        if (event.target == modal) {
+            closePurchaseForm();
+        }
+    }
+</script>
+
+   
+
+    
+    
+    
+    <!-- Sección de Donaciones -->
+    <section id="donaciones" class="donaciones">
+        <h2>¡Ayúdanos con tu Donación!</h2>
+        <p>Tu apoyo es crucial para que podamos seguir ofreciendo una segunda oportunidad a nuestros amigos peludos. Con tu donación, ayudamos a cubrir los gastos de alimentación, atención médica y otros cuidados esenciales.</p>
+        
+        <!-- Formulario para donaciones -->
+        <form action="donaciones_formulario.php" method="POST">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="monto">Monto de Donación:</label>
+            <input type="number" id="monto" name="monto" required>
+            <label for="metodo">Método de Pago:</label>
+            <select id="metodo" name="metodo" required>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+            <button type="submit">Donar Ahora</button>
+        </form>
+        
+        <p>¡Gracias por ser parte de nuestro esfuerzo y por ayudar a nuestros animales a encontrar un hogar!</p>
+    </section>
+
+    
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Si tienes preguntas sobre la adopción o necesitas más información, no dudes en escribirnos.</p>
+        <p>Email: <a href="mailto:contacto@refugio.com">contacto@refugio.com</a></p>
+        <p>Teléfono: +34 123 456 789</p>
+        <p>Dirección: Calle de los Animales, 123, Ciudad</p>
+    </section>
+
+    <!-- Modal de Adopción -->
+    <div id="adoption-modal" class="modal">
+        <div class="modal-content">
+            <h2>Formulario de Adopción</h2>
+            <p>Estás interesado en adoptar a <span id="mascota-nombre"></span>.</p>
+            <form>
+                <label for="nombre">Tu Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <button class="close-btn" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+
+        function openAdoptionForm(mascota) {
+            document.getElementById("mascota-nombre").textContent = mascota;
+            document.getElementById("adoption-modal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("adoption-modal").style.display = "none";
+        }
+    </script>
+
+    
+</body>
+</html>

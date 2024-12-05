@@ -1,0 +1,54 @@
+/* Estilos para la sección de contacto */
+.contacto {
+    background-color: #4CAF50; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+/* Estilo del título */
+.contacto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Estilo del texto */
+.contacto p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Estilo del enlace */
+.contacto a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto a:hover {
+    color: #e0e0e0; /* Color más claro en hover */
+    text-decoration: underline;
+}
+
+/* Adaptabilidad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 30px 15px;
+    }
+
+    .contacto h2 {
+        font-size: 24px;
+    }
+
+    .contacto p {
+        font-size: 14px;
+    }
+}
